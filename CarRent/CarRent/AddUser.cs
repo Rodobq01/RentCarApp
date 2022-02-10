@@ -23,11 +23,6 @@ namespace CarRent
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void AddUser_Load(object sender, EventArgs e)
         {
             var roles = _dbContext.Roles.ToList();
@@ -38,7 +33,8 @@ namespace CarRent
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
-
+            tb_user_name.Clear();
+            cb_role.SelectedIndex = -1;
         }
 
         private void btn_add_Click(object sender, EventArgs e)

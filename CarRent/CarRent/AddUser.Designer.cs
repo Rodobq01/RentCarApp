@@ -56,7 +56,6 @@ namespace CarRent
             this.tb_user_name.Name = "tb_user_name";
             this.tb_user_name.Size = new System.Drawing.Size(336, 29);
             this.tb_user_name.TabIndex = 1;
-            this.tb_user_name.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // cb_role
             // 
