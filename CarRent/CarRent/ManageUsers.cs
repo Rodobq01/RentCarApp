@@ -13,6 +13,7 @@ namespace CarRent
     public partial class ManageUsers : Form
     {
         private readonly CarRentDbContext _dbContext = new CarRentDbContext();
+        
         public ManageUsers()
         {
             InitializeComponent();
@@ -95,6 +96,14 @@ namespace CarRent
 
                 throw;
             }
+        }
+        private void button_change_password_Click(object sender, EventArgs e)
+        {
+            var id = (int)dataGridUsers.SelectedRows[0].Cells["Id"].Value;
+            var change_pass_window = new ChangePassword(id);
+            change_pass_window.Show();
+            Hide();
+
         }
     }
 }

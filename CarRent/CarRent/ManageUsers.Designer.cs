@@ -34,6 +34,7 @@ namespace CarRent
             this.Btn_AddNewUser = new System.Windows.Forms.Button();
             this.Btn_ResetPassword = new System.Windows.Forms.Button();
             this.Btn_ActivateDisactivateUser = new System.Windows.Forms.Button();
+            this.button_change_password = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@ namespace CarRent
             // Btn_AddNewUser
             // 
             this.Btn_AddNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Btn_AddNewUser.Location = new System.Drawing.Point(156, 559);
+            this.Btn_AddNewUser.Location = new System.Drawing.Point(43, 547);
             this.Btn_AddNewUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_AddNewUser.Name = "Btn_AddNewUser";
             this.Btn_AddNewUser.Size = new System.Drawing.Size(299, 72);
@@ -75,7 +76,7 @@ namespace CarRent
             // Btn_ResetPassword
             // 
             this.Btn_ResetPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Btn_ResetPassword.Location = new System.Drawing.Point(570, 559);
+            this.Btn_ResetPassword.Location = new System.Drawing.Point(373, 547);
             this.Btn_ResetPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_ResetPassword.Name = "Btn_ResetPassword";
             this.Btn_ResetPassword.Size = new System.Drawing.Size(290, 72);
@@ -96,11 +97,24 @@ namespace CarRent
             this.Btn_ActivateDisactivateUser.UseVisualStyleBackColor = true;
             this.Btn_ActivateDisactivateUser.Click += new System.EventHandler(this.Btn_ActivateDisactivateUser_Click);
             // 
+            // button_change_password
+            // 
+            this.button_change_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_change_password.Location = new System.Drawing.Point(701, 547);
+            this.button_change_password.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button_change_password.Name = "button_change_password";
+            this.button_change_password.Size = new System.Drawing.Size(290, 72);
+            this.button_change_password.TabIndex = 5;
+            this.button_change_password.Text = "Change password";
+            this.button_change_password.UseVisualStyleBackColor = true;
+            this.button_change_password.Click += new System.EventHandler(this.button_change_password_Click);
+            // 
             // ManageUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1387, 659);
+            this.Controls.Add(this.button_change_password);
             this.Controls.Add(this.Btn_ActivateDisactivateUser);
             this.Controls.Add(this.Btn_ResetPassword);
             this.Controls.Add(this.Btn_AddNewUser);
@@ -123,5 +137,6 @@ namespace CarRent
         private System.Windows.Forms.Button Btn_AddNewUser;
         private System.Windows.Forms.Button Btn_ResetPassword;
         private System.Windows.Forms.Button Btn_ActivateDisactivateUser;
+        private System.Windows.Forms.Button button_change_password;
     }
 }

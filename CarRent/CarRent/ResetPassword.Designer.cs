@@ -1,7 +1,7 @@
 ﻿
 namespace CarRent
 {
-    partial class ResetPassword
+    partial class ChangePassword
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace CarRent
         {
             this.Lb_NewPassword = new System.Windows.Forms.Label();
             this.Tb_NewPassword = new System.Windows.Forms.TextBox();
-            this.Btn_resetPassword = new System.Windows.Forms.Button();
+            this.Btn_changePassword = new System.Windows.Forms.Button();
             this.Tb_ConfirmPassword = new System.Windows.Forms.TextBox();
             this.Lb_NewPassword2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -57,16 +57,17 @@ namespace CarRent
             this.Tb_NewPassword.Size = new System.Drawing.Size(184, 26);
             this.Tb_NewPassword.TabIndex = 1;
             // 
-            // Btn_resetPassword
+            // Btn_changePassword
             // 
-            this.Btn_resetPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Btn_resetPassword.Location = new System.Drawing.Point(458, 145);
-            this.Btn_resetPassword.Margin = new System.Windows.Forms.Padding(2);
-            this.Btn_resetPassword.Name = "Btn_resetPassword";
-            this.Btn_resetPassword.Size = new System.Drawing.Size(99, 32);
-            this.Btn_resetPassword.TabIndex = 2;
-            this.Btn_resetPassword.Text = "Reset";
-            this.Btn_resetPassword.UseVisualStyleBackColor = true;
+            this.Btn_changePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Btn_changePassword.Location = new System.Drawing.Point(458, 145);
+            this.Btn_changePassword.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_changePassword.Name = "Btn_changePassword";
+            this.Btn_changePassword.Size = new System.Drawing.Size(99, 32);
+            this.Btn_changePassword.TabIndex = 2;
+            this.Btn_changePassword.Text = "Change";
+            this.Btn_changePassword.UseVisualStyleBackColor = true;
+            this.Btn_changePassword.Click += new System.EventHandler(this.Btn_changePassword_Click);
             // 
             // Tb_ConfirmPassword
             // 
@@ -89,20 +90,19 @@ namespace CarRent
             this.Lb_NewPassword2.TabIndex = 3;
             this.Lb_NewPassword2.Text = "Confirm password";
             // 
-            // ResetPassword
+            // ChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(577, 257);
             this.Controls.Add(this.Tb_ConfirmPassword);
             this.Controls.Add(this.Lb_NewPassword2);
-            this.Controls.Add(this.Btn_resetPassword);
+            this.Controls.Add(this.Btn_changePassword);
             this.Controls.Add(this.Tb_NewPassword);
             this.Controls.Add(this.Lb_NewPassword);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "ResetPassword";
-            this.Text = "ResetPassword";
-            this.Load += new System.EventHandler(this.ResetPassword_Load);
+            this.Name = "ChangePassword";
+            this.Text = "Change Password";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,7 +112,7 @@ namespace CarRent
 
         private System.Windows.Forms.Label Lb_NewPassword;
         private System.Windows.Forms.TextBox Tb_NewPassword;
-        private System.Windows.Forms.Button Btn_resetPassword;
+        private System.Windows.Forms.Button Btn_changePassword;
         private System.Windows.Forms.TextBox Tb_ConfirmPassword;
         private System.Windows.Forms.Label Lb_NewPassword2;
     }

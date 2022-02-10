@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace CarRent
 {
-    public partial class ResetPassword : Form
+    public partial class ChangePassword : Form
     {
-        public ResetPassword()
+        private readonly CarRentDbContext _dbContext = new CarRentDbContext();
+        private int _id;
+        public ChangePassword()
         {
             InitializeComponent();
         }
-
+        public ChangePassword(int id)
+        {
+            _id = id;
+        }
         private void Btn_resetPassword_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Btn_changePassword_Click(object sender, EventArgs e)
         {
             if (!(string.IsNullOrWhiteSpace(Tb_NewPassword.Text) || string.IsNullOrWhiteSpace(Tb_ConfirmPassword.Text)))
             {
@@ -30,7 +40,9 @@ namespace CarRent
                     else
                     {
                         //save to database
-
+                        var user = _dbContext.Users.FirstOrDefault(x => x.Id == _id);
+                        user.Password = Utils.HashPassword(Tb_ConfirmPassword.Text);
+                        _dbContext.SaveChanges();
                         MessageBox.Show("Data saved to db");
                     }
                 }
@@ -45,11 +57,6 @@ namespace CarRent
             {
                 MessageBox.Show("enter password first");
             }
-        }
-
-        private void ResetPassword_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
