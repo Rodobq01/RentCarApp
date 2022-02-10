@@ -61,13 +61,36 @@ namespace CarRent
 
         private void manageVehiclesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ManageVehicalWindow manageVehicalWindow = new ManageVehicalWindow();
+            manageVehicalWindow.Show();
+            Hide();
         }
 
         private void manageUsersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ManageUsers manageUsers = new ManageUsers();
             manageUsers.ShowDialog();
+            Hide();
+        }
+
+        private void addRentalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddRentalWindow addRentalWindow = new AddRentalWindow();
+            addRentalWindow.Show();
+            Hide();
+        }
+
+        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewRentalWindow viewRentalWindow = new ViewRentalWindow();
+            viewRentalWindow.Show();
+            Hide();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditRentalWindow editRentalWindow = new EditRentalWindow();
+            editRentalWindow.Show();
             Hide();
         }
     }

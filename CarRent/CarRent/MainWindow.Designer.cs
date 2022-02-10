@@ -32,10 +32,10 @@ namespace CarRent
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.manageVehiclesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageRentalsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manageUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addRentalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,14 +48,15 @@ namespace CarRent
             this.manageUsersToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1419, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1064, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // manageVehiclesToolStripMenuItem
             // 
             this.manageVehiclesToolStripMenuItem.Name = "manageVehiclesToolStripMenuItem";
-            this.manageVehiclesToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
+            this.manageVehiclesToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
             this.manageVehiclesToolStripMenuItem.Text = "Manage Vehicles";
             this.manageVehiclesToolStripMenuItem.Click += new System.EventHandler(this.manageVehiclesToolStripMenuItem_Click);
             // 
@@ -66,41 +67,45 @@ namespace CarRent
             this.viewToolStripMenuItem,
             this.editToolStripMenuItem});
             this.manageRentalsToolStripMenuItem.Name = "manageRentalsToolStripMenuItem";
-            this.manageRentalsToolStripMenuItem.Size = new System.Drawing.Size(129, 24);
+            this.manageRentalsToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
             this.manageRentalsToolStripMenuItem.Text = "Manage Rentals";
-            // 
-            // manageUsersToolStripMenuItem
-            // 
-            this.manageUsersToolStripMenuItem.Name = "manageUsersToolStripMenuItem";
-            this.manageUsersToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
-            this.manageUsersToolStripMenuItem.Text = "Manage Users";
-            this.manageUsersToolStripMenuItem.Click += new System.EventHandler(this.manageUsersToolStripMenuItem_Click);
             // 
             // addRentalToolStripMenuItem
             // 
             this.addRentalToolStripMenuItem.Name = "addRentalToolStripMenuItem";
-            this.addRentalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addRentalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addRentalToolStripMenuItem.Text = "Add rental";
+            this.addRentalToolStripMenuItem.Click += new System.EventHandler(this.addRentalToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewToolStripMenuItem.Text = "View";
+            this.viewToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
+            // manageUsersToolStripMenuItem
+            // 
+            this.manageUsersToolStripMenuItem.Name = "manageUsersToolStripMenuItem";
+            this.manageUsersToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.manageUsersToolStripMenuItem.Text = "Manage Users";
+            this.manageUsersToolStripMenuItem.Click += new System.EventHandler(this.manageUsersToolStripMenuItem_Click);
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1419, 822);
+            this.ClientSize = new System.Drawing.Size(1064, 668);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainWindow";
             this.Text = "MainWindow";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWindow_FormClosing);

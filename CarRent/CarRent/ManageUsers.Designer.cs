@@ -53,13 +53,13 @@ namespace CarRent
             // dataGridUsers
             // 
             this.dataGridUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridUsers.Location = new System.Drawing.Point(13, 205);
+            this.dataGridUsers.Location = new System.Drawing.Point(13, 101);
             this.dataGridUsers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridUsers.Name = "dataGridUsers";
             this.dataGridUsers.RowHeadersWidth = 51;
             this.dataGridUsers.RowTemplate.Height = 24;
             this.dataGridUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridUsers.Size = new System.Drawing.Size(1375, 289);
+            this.dataGridUsers.Size = new System.Drawing.Size(1361, 436);
             this.dataGridUsers.TabIndex = 1;
             // 
             // Btn_AddNewUser

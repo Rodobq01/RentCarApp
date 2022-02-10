@@ -57,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddRentalWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRentalWindow.Designer.cs">
+      <DependentUpon>AddRentalWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,12 @@
     </Compile>
     <Compile Include="CarRentalRecord.cs" />
     <Compile Include="CarRentDbContext.cs" />
+    <Compile Include="EditRentalWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditRentalWindow.Designer.cs">
+      <DependentUpon>EditRentalWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +94,12 @@
     </Compile>
     <Compile Include="ManageUsers.Designer.cs">
       <DependentUpon>ManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageVehicalWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageVehicalWindow.Designer.cs">
+      <DependentUpon>ManageVehicalWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202202041759385_FirstMigration.cs" />
     <Compile Include="Migrations\202202041759385_FirstMigration.designer.cs">
@@ -101,6 +119,12 @@
     <Compile Include="User.cs" />
     <Compile Include="UserRole.cs" />
     <Compile Include="Utils.cs" />
+    <Compile Include="ViewRentalWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewRentalWindow.Designer.cs">
+      <DependentUpon>ViewRentalWindow.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
