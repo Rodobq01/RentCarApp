@@ -53,7 +53,7 @@ namespace CarRent
             // dataGridUsers
             // 
             this.dataGridUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridUsers.Location = new System.Drawing.Point(-16, 208);
+            this.dataGridUsers.Location = new System.Drawing.Point(13, 205);
             this.dataGridUsers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridUsers.Name = "dataGridUsers";
             this.dataGridUsers.RowHeadersWidth = 51;
@@ -72,6 +72,7 @@ namespace CarRent
             this.Btn_AddNewUser.TabIndex = 2;
             this.Btn_AddNewUser.Text = "Add new user";
             this.Btn_AddNewUser.UseVisualStyleBackColor = true;
+            this.Btn_AddNewUser.Click += new System.EventHandler(this.Btn_AddNewUser_Click);
             // 
             // Btn_ResetPassword
             // 

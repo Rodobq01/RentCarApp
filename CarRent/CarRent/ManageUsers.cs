@@ -43,7 +43,7 @@ namespace CarRent
             }
         }
 
-        private void PopulateGrid()
+        public void PopulateGrid()
         {
             var users = _dbContext.Users.Select(x => new
             {
@@ -104,6 +104,12 @@ namespace CarRent
             change_pass_window.Show();
             Hide();
 
+        }
+
+        private void Btn_AddNewUser_Click(object sender, EventArgs e)
+        {
+            var addUser = new AddUser();
+            addUser.Show();
         }
     }
 }
