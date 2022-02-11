@@ -42,7 +42,7 @@ namespace CarRent
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(150, 471);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(6);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(138, 42);
             this.btnAdd.TabIndex = 0;
@@ -52,18 +52,18 @@ namespace CarRent
             // btn_refresh
             // 
             this.btn_refresh.Location = new System.Drawing.Point(369, 471);
-            this.btn_refresh.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_refresh.Margin = new System.Windows.Forms.Padding(6);
             this.btn_refresh.Name = "btn_refresh";
             this.btn_refresh.Size = new System.Drawing.Size(138, 42);
             this.btn_refresh.TabIndex = 1;
             this.btn_refresh.Text = "Refresh";
             this.btn_refresh.UseVisualStyleBackColor = true;
-            this.btn_refresh.Click += new System.EventHandler(this.button2_Click);
+            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
             // 
             // btn_edit
             // 
             this.btn_edit.Location = new System.Drawing.Point(622, 471);
-            this.btn_edit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(6);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(138, 42);
             this.btn_edit.TabIndex = 2;
@@ -73,7 +73,7 @@ namespace CarRent
             // btn_delete
             // 
             this.btn_delete.Location = new System.Drawing.Point(853, 471);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(6);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(138, 42);
             this.btn_delete.TabIndex = 3;
@@ -110,9 +110,10 @@ namespace CarRent
             this.Controls.Add(this.btn_refresh);
             this.Controls.Add(this.btnAdd);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ManageVehicalWindow";
             this.Text = "ManageVehicalWindow";
+            this.Load += new System.EventHandler(this.ManageVehicalWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwVehical)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_vehical)).EndInit();
             this.ResumeLayout(false);

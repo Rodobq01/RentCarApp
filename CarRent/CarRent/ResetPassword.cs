@@ -58,5 +58,10 @@ namespace CarRent
                 MessageBox.Show("enter password first");
             }
         }
+
+        private void ChangePassword_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
