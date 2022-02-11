@@ -54,5 +54,29 @@ namespace CarRent
           
 
         }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var carId = (int)dgwVehical.SelectedRows[0].Cells["Id"].Value;
+                var car = _dbContext.TypeOfCars.FirstOrDefault(c => c.Id == carId);
+                if(car != null)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Are you soure to delete this record ?",
+                       "Delete", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning );
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        _dbContext.TypeOfCars.Remove(car);
+                        _dbContext.SaveChanges();
+                        LoadCars();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error ", ex.Message);
+            }
+        }
     }
 }

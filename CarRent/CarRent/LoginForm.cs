@@ -23,6 +23,9 @@ namespace CarRent
 
         private void Btn_Login_Click(object sender, EventArgs e)
         {
+            //DialogResult dialogResult = MessageBox.Show("Are you soure to delete this record ?",
+            //           "Delete", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+            //if (dialogResult == DialogResult.Yes) { MessageBox.Show("Yes"); }
             string log, pass;
             log = Tb_Username.Text;
             pass = Tb_Password.Text;
