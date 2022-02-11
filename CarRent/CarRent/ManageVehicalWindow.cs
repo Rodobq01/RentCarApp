@@ -35,5 +35,24 @@ namespace CarRent
         {
             LoadCars();
         }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+           var carId = (int)dgwVehical.SelectedRows[0].Cells["Id"].Value;
+            if (carId > 0)
+            {
+                var car = _dbContext.TypeOfCars.FirstOrDefault();
+                if(car != null)
+                {
+                    if (!Utils.FormIsOpen("AddCarVehicleWindow"))
+                    {
+                        var editCarVehicleWindow = new AddCarVehicleWindow(car, this, true);
+                        editCarVehicleWindow.Show();
+                    }
+                }
+            }
+          
+
+        }
     }
 }

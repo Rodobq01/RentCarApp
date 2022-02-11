@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CarRent
 {
@@ -24,6 +25,13 @@ namespace CarRent
         public static string DefaultHashPassword()
         {
             return HashPassword("qwerty123");
+        }
+
+        public static bool FormIsOpen(string formName)
+        {
+            var openForms = Application.OpenForms.Cast<Form>();
+            var isOpen = openForms.Any(x => x.Name == formName);
+            return isOpen;
         }
     }
 }
